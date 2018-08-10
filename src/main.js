@@ -7,6 +7,7 @@ import './styles.css';
 $(document).ready(function() {
   $('#find-doctor-by-name').click(function(event) {
     event.preventDefault();
+    $('.errors').fadeOut();
     $(".doctor-matches").html("");
     let firstName = $('#first-name').val();
     let lastName = $('#last-name').val();
@@ -46,6 +47,7 @@ $(document).ready(function() {
 
   $('#find-doctor-by-symptom').click(function(event) {
     event.preventDefault();
+    $('.errors').fadeOut();
     $(".doctor-matches").html("");
     let symptom = $('#symptom').val();
 
