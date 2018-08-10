@@ -7,21 +7,29 @@
   <body>
     <div class="container">
       <h1>Find Doctors in Portland</h1>
-      <div class="form-group">
-        <label for="symptom">What can the doctor help you with?</label>
-        <select class="form-control" id="symptom">
-          <option>Sore throat</option>
-          <option>Rash</option>
-          <option>Allergies</option>
-          <option>Asthma</option>
-          <option>Pregnancy</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="doctor-name">If you already have a doctor, search by name:</label>
-        <input type="text" class="form-control" id="doctor-name" placeholder="Erin Young">
-      </div>
-      <button class="btn-success" id="find-doctors">Find Doctors!</button>
+      <form id="find-doctor">
+        <div class="form-group">
+          <label for="symptom">Find a new doctor based on symptom:</label>
+          <select class="form-control" id="symptom">
+            <option value="sore%20throat">Sore throat</option>
+            <option>Rash</option>
+            <option>Allergies</option>
+            <option>Asthma</option>
+            <option>Pregnancy</option>
+          </select>
+        </div>
+        <p>OR</p>
+        <p>If you already have a doctor, search by name:</p>
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" class="form-control" id="first-name" placeholder="Erin">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" class="form-control" id="last-name" placeholder="Young">
+        </div>
+        <button class="btn-success" id="find-doctors">Find Doctors!</button>
+      </form>
       <div class="errors"></div>
       <div class="doctor-matches"></div>
     </div>

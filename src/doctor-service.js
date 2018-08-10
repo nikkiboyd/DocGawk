@@ -1,8 +1,8 @@
-export class DoctorService {
-  getPortlandDoctors() {
+class DoctorService {
+  getPortlandDoctors(firstName, lastName, symptom) {
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
-      let url = `https://api.betterdoctor.com/2016-03-01/doctors?location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`;
+      let url = `https://api.betterdoctor.com/2016-03-01/doctors?first_name=${firstName}&last_name=${lastName}&query=${symptom}&location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`;
       request.onload = function() {
         if (this.status === 200) {
           resolve(request.response);
@@ -15,3 +15,5 @@ export class DoctorService {
     });
   }
 }
+
+export default DoctorService;
