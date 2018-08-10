@@ -13,3 +13,14 @@
 .jumbotron {
   text-align: center;
 }
+
+.card {
+  border-style: none;
+}
+
+.errors {
+  display: none;
+  padding-top: 50px;
+  text-align: center;
+  color: red;
+}
