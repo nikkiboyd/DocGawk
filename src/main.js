@@ -29,7 +29,11 @@ $(document).ready(function() {
           let body = JSON.parse(response);
           for (let i = 0; i < body.data.length; i++){
             console.log(body.data[i].practices[i]);
-            $('.doctor-matches').append(`<li>${body.data[i].practices[i].name}</li>`);
+            $('.doctor-matches').append(`<div class='card'>
+                                          <p>${body.data[i].practices[i].name}</p>
+                                          <p>Address: <br>${body.data[i].practices[i].visit_address.street}<br>${body.data[i].practices[i].visit_address.city}, ${body.data[i].practices[i].visit_address.state} ${body.data[i].practices[i].visit_address.zip}</p>
+                                          <p>Phone: <br> ${body.data[i].practices[i].phones[i].number}
+                                          <p>Accepts New Patients: ${body.data[i].practices[i].accepts_new_patients}`);
           }
         }, function(error) {
           $('.errors').text(`There was an error processing your request: ${error.message}`);

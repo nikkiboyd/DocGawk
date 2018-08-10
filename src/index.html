@@ -2,36 +2,40 @@
   <head>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Doctor Directory</title>
+    <title>Discover Doctors</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Find Doctors in Portland</h1>
+    <div class="container row">
+      <div class="col-md-6">
+        <h1>Find a doctor for...<h1>
         <div class="form-group">
-          <label for="symptom">Find a new doctor based on symptom:</label>
+          <label for="symptom">Specialties:</label>
           <select class="form-control" id="symptom">
+            <option value="null">Select a practice</option>
             <option value="massage">Massage Therapy</option>
-            <option value="sore%20throat">Sore throat</option>
-            <option>Rash</option>
-            <option>Allergies</option>
-            <option>Asthma</option>
-            <option>Pregnancy</option>
+            <option value="sore%20throat">Ear, nose, throat issues</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="allergy">Allergies</option>
+            <option value="asthma">Asthma</option>
+            <option value="cancer">Cancer treatment & diagnosis</option>
+            <option value="pregnancy">Pregnancy</option>
           </select>
         </div>
         <button id="find-doctor-by-symptom" class="btn btn-success">Find Doctor By Symptom</button>
-        <p>OR</p>
-        <p>If you already have a doctor, search by name:</p>
-        <div class="form-group">
-          <label for="first-name">First Name:</label>
-          <input type="text" class="form-control" id="first-name" placeholder="Erin">
         </div>
-        <div class="form-group">
-          <label for="last-name">Last Name:</label>
-          <input type="text" class="form-control" id="last-name" placeholder="Young">
-        </div>
-        <button id="find-doctor-by-name" class="btn btn-primary">Find Doctor By Name</button>
-      <div class="errors"></div>
-      <div class="doctor-matches"></div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" class="form-control" id="first-name" placeholder="Erin">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Young">
+          </div>
+          <button id="find-doctor-by-name" class="btn btn-primary">Find Doctor By Name</button>
+        <div class="errors"></div>
+        <div class="doctor-matches"></div>
+      </div>
     </div>
   </body>
 </html>
