@@ -12,18 +12,7 @@ This program utilized the BetterDoctor API to assist users with finding a doctor
 |--|--|--|
 | Allow a user to enter a medical issue and receive a list of doctors in the Portland area that fit the search query | Prenatal care | Melanie Plaut, MD |
 | Allow a user to enter a name to receive a list of doctors in the Portland area that fit the search query | First Name: Xavier | Xavier Preciado, CMT |
-| Include the following information about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients  | Xavier Preciado, CMT | Address:
-2348 NW Lovejoy St
-Portland, OR 97210
-
-Phone:
-5032247224
-
-Accepting New Patients:
-Yes
-
-Website:
-Not found |
+| Include the following information about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients  | Xavier Preciado, CMT | Dr. Prciado's Details |
 | Return a notification with error message if the API call results in an error (any message not a 200 OK)| Unauthorized API key | There was an error processing your request: Unauthorized |
 | Return an custom error notification if no doctors meet the criteria | Nikki Boyd | Sorry, no doctors match your search. |
 
