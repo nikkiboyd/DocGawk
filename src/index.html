@@ -7,10 +7,11 @@
   <body>
     <div class="container">
       <h1>Find Doctors in Portland</h1>
-      <form id="find-doctor">
+      <form>
         <div class="form-group">
           <label for="symptom">Find a new doctor based on symptom:</label>
           <select class="form-control" id="symptom">
+            <option value="massage">Massage Therapy</option>
             <option value="sore%20throat">Sore throat</option>
             <option>Rash</option>
             <option>Allergies</option>
@@ -28,7 +29,7 @@
           <label for="last-name">Last Name:</label>
           <input type="text" class="form-control" id="last-name" placeholder="Young">
         </div>
-        <button class="btn-success" id="find-doctors">Find Doctors!</button>
+        <button class="btn-success" id="find-doctor">Find Doctors!</button>
       </form>
       <div class="errors"></div>
       <div class="doctor-matches"></div>
