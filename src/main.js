@@ -25,8 +25,14 @@ $(document).ready(function() {
                                           <h4>${body.data[i].practices[i].name}</h4>
                                           <h6>Address:</h6><p>${body.data[i].practices[i].visit_address.street}<br>${body.data[i].practices[i].visit_address.city}, ${body.data[i].practices[i].visit_address.state} ${body.data[i].practices[i].visit_address.zip}</p>
                                           <h6>Phone:</h6><p>${body.data[i].practices[i].phones[i].number}
-                                          <h6>Accepts New Patients:</h6><p>${body.data[i].practices[i].accepts_new_patients}
+                                          <h6>Accepting New Patients:</h6><p>${body.data[i].practices[i].accepts_new_patients}
                                           <h6>Website:</h6><p>${body.data[i].practices[i].website}`);
+            var yes = $("body").html().replace(/true/g,'Yes');
+            $("body").html(yes);
+            var no = $("body").html().replace(/false/g,'No');
+            $("body").html(no);
+            var noWebsite = $("body").html().replace(/undefined/g,'Not found');
+            $("body").html(noWebsite);
             $('.doctor-matches').fadeIn();
           }
         } else if (body.data.length === 0) {
@@ -52,10 +58,16 @@ $(document).ready(function() {
             for (let i = 0; i < body.data.length; i++){
               $('.doctor-matches').append(`<div class='card center'>
                                             <h4>${body.data[i].practices[i].name}</h4>
-                                            <p>Address: <br>${body.data[i].practices[i].visit_address.street}<br>${body.data[i].practices[i].visit_address.city}, ${body.data[i].practices[i].visit_address.state} ${body.data[i].practices[i].visit_address.zip}</p>
-                                            <p>Phone: <br> ${body.data[i].practices[i].phones[i].number}
-                                            <p>Accepts New Patients: ${body.data[i].practices[i].accepts_new_patients}
-                                            <p>Website: ${body.data[i].practices[i].website}`);
+                                            <h6>Address:</h6><p>${body.data[i].practices[i].visit_address.street}<br>${body.data[i].practices[i].visit_address.city}, ${body.data[i].practices[i].visit_address.state} ${body.data[i].practices[i].visit_address.zip}</p>
+                                            <h6>Phone:</h6><p>${body.data[i].practices[i].phones[i].number}
+                                            <h6>Accepts New Patients:</h6><p>${body.data[i].practices[i].accepts_new_patients}
+                                            <h6>Website:</h6><p>${body.data[i].practices[i].website}`);
+              var yes = $("body").html().replace(/true/g,'Yes');
+              $("body").html(yes);
+              var no = $("body").html().replace(/false/g,'No');
+              $("body").html(no);
+              var noWebsite = $("body").html().replace(/undefined/g,'Not found');
+              $("body").html(noWebsite);
               $('.doctor-matches').fadeIn();
             }
           } else if (body.data.length === 0) {
