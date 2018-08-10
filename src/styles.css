@@ -24,3 +24,7 @@
   text-align: center;
   color: red;
 }
+
+.doctor-matches {
+  display: none;
+}
