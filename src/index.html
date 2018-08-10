@@ -7,7 +7,6 @@
   <body>
     <div class="container">
       <h1>Find Doctors in Portland</h1>
-      <form>
         <div class="form-group">
           <label for="symptom">Find a new doctor based on symptom:</label>
           <select class="form-control" id="symptom">
@@ -19,6 +18,7 @@
             <option>Pregnancy</option>
           </select>
         </div>
+        <button id="find-doctor-by-symptom" class="btn btn-success">Find Doctor By Symptom</button>
         <p>OR</p>
         <p>If you already have a doctor, search by name:</p>
         <div class="form-group">
@@ -29,8 +29,7 @@
           <label for="last-name">Last Name:</label>
           <input type="text" class="form-control" id="last-name" placeholder="Young">
         </div>
-        <button class="btn-success" id="find-doctor">Find Doctors!</button>
-      </form>
+        <button id="find-doctor-by-name" class="btn btn-primary">Find Doctor By Name</button>
       <div class="errors"></div>
       <div class="doctor-matches"></div>
     </div>
