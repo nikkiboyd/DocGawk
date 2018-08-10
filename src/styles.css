@@ -1,8 +1,8 @@
 .center {
-    margin: auto;
-    width: 75%;
-    padding: 10px;
-    background-color: white;
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  background-color: white;
 }
 
 .col-md-6 {
@@ -13,12 +13,12 @@
 }
 
 input, input[placeholder], select {
-    text-align: center;
+  text-align: center;
 }
 
 select {
   width: 400px;
-  text-align-last:center;
+  text-align-last: center;
 }
 
 .jumbotron {
@@ -63,8 +63,8 @@ h1 {
 }
 
 .header {
-    color: #2F94E4;
-    font-size: 24px;
+  color: #2F94E4;
+  font-size: 24px;
 }
 
 body {

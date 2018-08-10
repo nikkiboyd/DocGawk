@@ -1,21 +1,21 @@
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Londrina+Outline" rel="stylesheet">
-    <title>DocGawk</title>
-  </head>
-  <body>
-    <div class="jumbotron center">
-      <img src="https://i.pinimg.com/736x/26/4e/30/264e30439c42387c1e3c48d2d038429d.jpg" height="20%" id="logo">
-      <h1>DocGawk <img src="http://pix.iemoji.com/images/emoji/apple/8.3/256/eyes.png" height="5%"></h1>
-      <h6 id="slogan">peep doctors in your area by name or specialty!</h6>
-    </div>
-    <div class="container row center">
-      <div class="col-md-6">
-          <h3 class="center header">Find a new doctor</h3>
-          <hr>
-          <div class="form-group">
-            <label for="symptom">Specialties:</label>
-            <select class="form-control" id="symptom">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Londrina+Outline" rel="stylesheet">
+  <title>DocGawk</title>
+</head>
+<body>
+  <div class="jumbotron center">
+    <img src="https://i.pinimg.com/736x/26/4e/30/264e30439c42387c1e3c48d2d038429d.jpg" height="20%" id="logo">
+    <h1>DocGawk <img src="http://pix.iemoji.com/images/emoji/apple/8.3/256/eyes.png" height="5%"></h1>
+    <h6 id="slogan">peep doctors in your area by name or specialty!</h6>
+  </div>
+  <div class="container row center">
+    <div class="col-md-6">
+      <h3 class="center header">Find a new doctor</h3>
+      <hr>
+      <div class="form-group">
+        <label for="symptom">Specialties:</label>
+        <select class="form-control" id="symptom">
               <option value="null">Select one</option>
               <option value="massage">Massage Therapy</option>
               <option value="throat">Ear, nose, throat issues</option>
@@ -32,30 +32,27 @@
               <option value="surgery">Surgical medicine</option>
               <option value="cosmetic">Cosmetic surgery</option>
             </select>
-          </div>
-          <button id="find-doctor-by-symptom" class="btn btn-success">Find Doctor By Symptom</button>
-        </div>
-        <div class="col-md-6">
-          <h3 div class="center header">Look up my doctor</h3>
-          <hr>
-          <div class="form-group">
-            <label for="first-name">First Name:</label>
-            <input type="text" class="form-control" id="first-name" placeholder="Michael">
-          </div>
-          <div class="form-group">
-            <label for="last-name">Last Name:</label>
-            <input type="text" class="form-control" id="last-name" placeholder="Osborne">
-          </div>
-          <button id="find-doctor-by-name" class="btn btn-primary">Find Doctor By Name</button>
-        </div>
-
-        <div class="doctor-matches center">
-        </div>
-
-        <div class="errors center">
-          <h3>Sorry, no doctors match your search.</h3>
-          <img src="https://img.clipartxtras.com/6e95d3dfb6f305189c30e23960e5b66f_matching-game-sad-doctor-clipart_1148-1500.png" height="30%">
-        </div>
       </div>
-  </body>
+      <button id="find-doctor-by-symptom" class="btn btn-success">Find Doctor By Symptom</button>
+    </div>
+    <div class="col-md-6">
+      <h3 div class="center header">Look up my doctor</h3>
+      <hr>
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" class="form-control" id="first-name" placeholder="Michael">
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" class="form-control" id="last-name" placeholder="Osborne">
+      </div>
+      <button id="find-doctor-by-name" class="btn btn-primary">Find Doctor By Name</button>
+    </div>
+    <div class="doctor-matches center"></div>
+    <div class="errors center">
+      <h3>Sorry, no doctors match your search.</h3>
+      <img src="https://img.clipartxtras.com/6e95d3dfb6f305189c30e23960e5b66f_matching-game-sad-doctor-clipart_1148-1500.png" height="30%">
+    </div>
+  </div>
+</body>
 </html>
