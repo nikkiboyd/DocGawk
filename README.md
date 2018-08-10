@@ -29,6 +29,8 @@ Not found |
 
 # _Installation for OSX_
 - Download the repository from GitHub (https://github.com/nikkiboyd/DocGawk)
+- Generate your own API key from https://developer.betterdoctor.com/
+- Place your API key in an .env file with the variable name 'exports.apiKey'
 - Install Node.js on your machine
 - Install Karma using the command `npm install -g karma-cli`
 - Open the command line and run the following prompts:
