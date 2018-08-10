@@ -1,4 +1,8 @@
 import DoctorService from './doctor-service.js';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
 $(document).ready(function() {
   $('#find-doctor-by-name').click(function(event) {
