@@ -1,16 +1,15 @@
-html {
-  background-color: yellow;
-}
-
 .center {
     margin: auto;
     width: 75%;
     padding: 10px;
-    text-align: center;
-    color: red;
+    background-color: white;
 }
 
-.modifyColor {
-  color: pink;
-  font-weight: bold;
+.col-md-6 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.jumbotron {
+  text-align: center;
 }
