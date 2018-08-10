@@ -6,8 +6,19 @@
 }
 
 .col-md-6 {
+  padding-top: 30px;
   padding-left: 80px;
   padding-right: 80px;
+  text-align: center;
+}
+
+input, input[placeholder], select {
+    text-align: center;
+}
+
+select {
+  width: 400px;
+  text-align-last:center;
 }
 
 .jumbotron {
@@ -51,7 +62,16 @@ h1 {
   padding-bottom: 300px;
 }
 
+.header {
+    color: #4C5160;
+}
+
 body {
   background-color: #E0E3E5;
   height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border-color: #2F94E4;
 }
