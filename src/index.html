@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Doctor Directory</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find Doctors in Portland</h1>
+      <div class="form-group">
+        <label for="symptom">What can the doctor help you with?</label>
+        <select class="form-control" id="symptom">
+          <option>Sore throat</option>
+          <option>Rash</option>
+          <option>Allergies</option>
+          <option>Asthma</option>
+          <option>Pregnancy</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="doctor-name">If you already have a doctor, search by name:</label>
+        <input type="text" class="form-control" id="doctor-name" placeholder="Erin Young">
+      </div>
+      <button class="btn-success" id="find-doctors">Find Doctors!</button>
+      <div class="errors"></div>
+      <div class="doctor-matches"></div>
+    </div>
+  </body>
+</html>
