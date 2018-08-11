@@ -7,6 +7,15 @@
 # _About the App_
 This program utilized the BetterDoctor API to assist users with finding a doctor in the area. If users need to find a new doctor, they can search for all doctors by specialty and obtain a list of all doctors (including details for their first name, last name, address, phone number, website and whether or not the doctor is accepting new patients). If users already have a preferred doctor, they may search for their contact information by either first or last name.
 
+<img src="images/screenshot.png">
+
+View of search for "Massage Therapists" in the Portland area.
+
+<img src="images/screenshot2.png">
+
+View when search criteria returns no results.
+
+
 # _Specifications_
 | Programs will... | Example input | Example output |
 |--|--|--|
